@@ -15,6 +15,7 @@
 		10BC4E161F0E06B700B5A89F /* BlocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BC4E151F0E06B700B5A89F /* BlocksViewController.swift */; };
 		10BC4E181F0E06C200B5A89F /* NetworkCallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BC4E171F0E06C200B5A89F /* NetworkCallsViewController.swift */; };
 		10BC4E1A1F0E06CA00B5A89F /* TimersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BC4E191F0E06CA00B5A89F /* TimersViewController.swift */; };
+		10BC4E1C1F0E0D8300B5A89F /* ConstraintResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BC4E1B1F0E0D8300B5A89F /* ConstraintResolver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		10BC4E151F0E06B700B5A89F /* BlocksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlocksViewController.swift; sourceTree = "<group>"; };
 		10BC4E171F0E06C200B5A89F /* NetworkCallsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkCallsViewController.swift; sourceTree = "<group>"; };
 		10BC4E191F0E06CA00B5A89F /* TimersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimersViewController.swift; sourceTree = "<group>"; };
+		10BC4E1B1F0E0D8300B5A89F /* ConstraintResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintResolver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				10BC4E151F0E06B700B5A89F /* BlocksViewController.swift */,
 				10BC4E171F0E06C200B5A89F /* NetworkCallsViewController.swift */,
 				10BC4E191F0E06CA00B5A89F /* TimersViewController.swift */,
+				10BC4E1B1F0E0D8300B5A89F /* ConstraintResolver.swift */,
 			);
 			path = RetainCyclesDemo;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10BC4E161F0E06B700B5A89F /* BlocksViewController.swift in Sources */,
+				10BC4E1C1F0E0D8300B5A89F /* ConstraintResolver.swift in Sources */,
 				10BC4E061F0E054A00B5A89F /* ViewController.swift in Sources */,
 				10BC4E181F0E06C200B5A89F /* NetworkCallsViewController.swift in Sources */,
 				10BC4E1A1F0E06CA00B5A89F /* TimersViewController.swift in Sources */,
