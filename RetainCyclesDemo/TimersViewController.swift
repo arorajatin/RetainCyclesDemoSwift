@@ -23,12 +23,24 @@ class TimersViewController: UIViewController {
     
     /**Core Logic Begins**/
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        
         nonRepeatingTimer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(nonRepeatingTimerFired), userInfo: nil, repeats: false)
         repeatingTimer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(repeatingTimerFired), userInfo: nil, repeats: true)
+        
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        
+        super.viewWillDisappear(animated)
+        
+        nonRepeatingTimer?.invalidate()
+        repeatingTimer?.invalidate()
+        
+    }
+    
     
     func nonRepeatingTimerFired() {
         print("Non-repeating timer fired")
