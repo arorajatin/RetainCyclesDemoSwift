@@ -9,6 +9,7 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
+<<<<<<< HEAD
             filePath = "RetainCyclesDemo/TimersViewController.swift"
             timestampString = "521040744.738445"
             startingColumnNumber = "9223372036854775807"
@@ -16,6 +17,14 @@
             startingLineNumber = "78"
             endingLineNumber = "78"
             landmarkName = "deinit"
+=======
+            filePath = "RetainCyclesDemo/NetworkCallsViewController.swift"
+            timestampString = "521016903.546933"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "printStories(data:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,12 +34,38 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
+            filePath = "RetainCyclesDemo/NetworkCallsViewController.swift"
+            timestampString = "521016903.546933"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "makeNetworkCall()"
+>>>>>>> 8bb98c2... Add NetworkCallViewController for reatin cycle demo
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+<<<<<<< HEAD
             filePath = "RetainCyclesDemo/TimersViewController.swift"
             timestampString = "521040778.789564"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
             endingLineNumber = "24"
+=======
+            filePath = "RetainCyclesDemo/NetworkCallsViewController.swift"
+            timestampString = "521017080.80976"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+>>>>>>> 8bb98c2... Add NetworkCallViewController for reatin cycle demo
             landmarkName = "deinit"
             landmarkType = "7">
          </BreakpointContent>
