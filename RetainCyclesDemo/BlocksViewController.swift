@@ -19,8 +19,8 @@ class BlocksViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        constraintResolver = ConstraintResolver(callback: { (finish) in
-            self.resolvedConstraints()
+        constraintResolver = ConstraintResolver(callback: { [weak self] (finish) in
+            self?.resolvedConstraints()
         })
         
         constraintResolver?.addConstraint("TEST")
