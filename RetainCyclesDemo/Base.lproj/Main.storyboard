@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RetainCyclesDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6r-H7-gz0" userLabel="Blocks Button">
+                                <rect key="frame" x="164" y="204.5" width="46" height="30"/>
+                                <state key="normal" title="Blocks"/>
+                                <connections>
+                                    <segue destination="myT-dZ-BcS" kind="show" id="v6q-je-5yB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sih-4D-oAS" userLabel="Network Button">
+                                <rect key="frame" x="143" y="318.5" width="88" height="30"/>
+                                <state key="normal" title="Network Call"/>
+                                <connections>
+                                    <segue destination="Cy3-NN-suw" kind="show" id="saR-tJ-IWB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4B-I2-pw6" userLabel="Timer Button">
+                                <rect key="frame" x="163.5" y="448.5" width="47" height="30"/>
+                                <state key="normal" title="Timers"/>
+                                <connections>
+                                    <segue destination="lHg-5o-pKf" kind="show" id="cMz-DY-agh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="m4B-I2-pw6" firstAttribute="top" secondItem="Sih-4D-oAS" secondAttribute="bottom" constant="100" id="Gcb-DI-daS"/>
+                            <constraint firstItem="Sih-4D-oAS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SAn-sa-lNu"/>
+                            <constraint firstItem="F6r-H7-gz0" firstAttribute="centerX" secondItem="Sih-4D-oAS" secondAttribute="centerX" id="har-HR-qP5"/>
+                            <constraint firstItem="Sih-4D-oAS" firstAttribute="top" secondItem="F6r-H7-gz0" secondAttribute="bottom" constant="84" id="itJ-ap-dNP"/>
+                            <constraint firstItem="m4B-I2-pw6" firstAttribute="centerX" secondItem="Sih-4D-oAS" secondAttribute="centerX" id="nhc-YZ-hyX"/>
+                            <constraint firstItem="Sih-4D-oAS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tfr-zv-L3C"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Network Calls-->
+        <scene sceneID="3D2-Vf-xix">
+            <objects>
+                <viewController id="fMl-9D-VjK" customClass="NetworkCallsViewController" customModule="RetainCyclesDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fsr-sM-PZT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fj2-g4-YX1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VPM-V7-4Z6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Network Calls" id="I1t-uz-90r">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="knk-Sg-1Fc">
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="fMl-9D-VjK" id="T8d-Aw-eTY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cbb-yh-msA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2024.8" y="289.20539730134936"/>
+        </scene>
+        <!--Timers-->
+        <scene sceneID="aNJ-RZ-mOf">
+            <objects>
+                <viewController id="KfF-EI-Z5Q" customClass="TimersViewController" customModule="RetainCyclesDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mn9-Oy-cpn"/>
+                        <viewControllerLayoutGuide type="bottom" id="BIg-3N-fj3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Bb-IU-Fpg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Timers" id="jxy-K8-uqV">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="xif-ll-VEq">
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="KfF-EI-Z5Q" id="yrb-91-hbB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8W3-4w-4py" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2020" y="953.97301349325346"/>
+        </scene>
+        <!--Blocks-->
+        <scene sceneID="70W-zV-LSP">
+            <objects>
+                <viewController id="OOq-JW-1lA" customClass="BlocksViewController" customModule="RetainCyclesDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wM2-GQ-kIp"/>
+                        <viewControllerLayoutGuide type="bottom" id="tp6-x5-q00"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WEp-sI-urB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Blocks" id="wCg-of-s30">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="cXG-02-wOl">
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="OOq-JW-1lA" id="UKZ-AT-Db2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IlY-wB-9xn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2004" y="-384.55772113943033"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iOq-di-3T8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="myT-dZ-BcS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tdf-6D-PTg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OOq-JW-1lA" kind="relationship" relationship="rootViewController" id="EdC-pC-N60"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WKX-8Y-vnw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064.8" y="-384.55772113943033"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HR8-fS-Iwm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cy3-NN-suw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vOC-bg-DFt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fMl-9D-VjK" kind="relationship" relationship="rootViewController" id="3Bf-4e-YT0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BmP-f8-cYu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1085.5999999999999" y="289.20539730134936"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fxG-BE-19d">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lHg-5o-pKf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qZm-kh-ZCk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KfF-EI-Z5Q" kind="relationship" relationship="rootViewController" id="TNy-6i-fQP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tOI-ss-uXL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="795" y="1114"/>
+        </scene>
+    </scenes>
+</document>
