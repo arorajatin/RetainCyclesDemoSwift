@@ -34,8 +34,8 @@ class NetworkCallsViewController: UIViewController {
         
         //This is temporary retain cycle
         
-        let task = urlSession.dataTask(with: urlRequest) { (data, response, error) in
-            self.printStories(data: data)
+        let task = urlSession.dataTask(with: urlRequest) { [weak self] (data, response, error) in
+            self?.printStories(data: data)
         }
         
         task.resume()
