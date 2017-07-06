@@ -13,6 +13,9 @@ class TimersViewController: UIViewController {
     weak var nonRepeatingTimer: Timer?
     weak var repeatingTimer: Timer?
     
+    //We have a strong reference to the Timer!!!
+    var weakWrappingDemonstrationTimer: Timer?
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -30,6 +33,9 @@ class TimersViewController: UIViewController {
         nonRepeatingTimer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(nonRepeatingTimerFired), userInfo: nil, repeats: false)
         repeatingTimer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(repeatingTimerFired), userInfo: nil, repeats: true)
         
+        //This wrapper breaks the reatin cycle 
+        let wrapper = TimersViewControllerWrapper(timersVC: self)
+        weakWrappingDemonstrationTimer = Timer.scheduledTimer(timeInterval: 3.0, target: wrapper, selector: #selector(TimersViewControllerWrapper.timerFired), userInfo: nil, repeats: true)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -57,4 +63,18 @@ class TimersViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
 
+}
+
+class TimersViewControllerWrapper {
+    
+    weak var timersVC: TimersViewController?
+    
+    init(timersVC: TimersViewController) {
+        self.timersVC = timersVC
+    }
+    
+    @objc func timerFired() {
+        print("Weak wrapping timer fired")
+    }
+    
 }
