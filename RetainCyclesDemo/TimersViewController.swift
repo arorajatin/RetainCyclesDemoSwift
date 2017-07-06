@@ -10,8 +10,8 @@ import UIKit
 
 class TimersViewController: UIViewController {
 
-    var nonRepeatingTimer: Timer!
-    var repeatingTimer: Timer!
+    weak var nonRepeatingTimer: Timer?
+    weak var repeatingTimer: Timer?
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
