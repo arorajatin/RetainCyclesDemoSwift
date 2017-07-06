@@ -21,6 +21,7 @@ class TimersViewController: UIViewController {
     }
     
     deinit {
+        weakWrappingDemonstrationTimer?.invalidate()
         print("TimersViewController dealloced")
     }
     
@@ -71,6 +72,10 @@ class TimersViewControllerWrapper {
     
     init(timersVC: TimersViewController) {
         self.timersVC = timersVC
+    }
+    
+    deinit {
+        print("Wrapper deallocated")
     }
     
     @objc func timerFired() {
